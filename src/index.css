@@ -1,0 +1,45 @@
+*{
+  font-family: cursive;
+
+}
+
+.navbar-style{
+  background-color: rgb(251, 222, 187)
+}
+.logo-style{
+  width: 60px;
+  height: 60px;
+}
+.logo_name{
+  margin-left: 3.5rem;
+  margin-top: -1.5rem;
+  font-size: small;
+}
+
+.nav-style{
+  color: black;
+  font-size: large;
+}
+
+.slide-img{
+  height: 30rem;
+}
+
+main{
+  min-height: 80vh;
+}
+
+footer{
+  background-color: rgb(251, 222, 187);
+  color: black;
+  font-size: large;
+}
+
+.form-style{
+  font-size: large;
+}
+
+.h6-style{
+  font-size: small;
+  margin-left: 4rem;
+}
