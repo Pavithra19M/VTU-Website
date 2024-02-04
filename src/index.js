@@ -8,15 +8,23 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SlideComponenet from './components/SlideComponent';
-import ResultComponenet from './components/ResultComponent';
+import SlideComponent from './components/SlideComponent';
+import ResultComponent from './components/ResultComponent';
 import ResultPage from './components/ResultPage';
+import About from './components/About';
+import AdminScreen from './components/AdminScreen';
+import AdmissionFormScreen from './components/AdmissionFormScreen';
+import AdmissionDetailsScreen from './components/AdmissionDetailsScreen';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
-      <Route path='/home' index={true} element={<SlideComponenet/>}/> 
-      <Route path='/result' element={<ResultComponenet/>} />
+      <Route path='/' index={true} element={<SlideComponent/>}/> 
+      <Route path='/about' element={<About/>} />
+      <Route path='/admin/login' element={<AdminScreen />} />
+      <Route path='/student/admissionform' element={<AdmissionFormScreen />} />
+      <Route path='/admin/admissiondetails' element={<AdmissionDetailsScreen/>} /> 
+      <Route path='/result' element={<ResultComponent/>} />
       <Route path='/resultpage/:id' element = {<ResultPage/>} />
     </Route>
   )

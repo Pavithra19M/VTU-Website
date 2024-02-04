@@ -1,5 +1,5 @@
 *{
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -26,13 +26,13 @@
 }
 
 main{
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 footer{
   background-color: rgb(251, 222, 187);
   color: black;
-  font-size: large;
+  /* font-size: large; */
 }
 
 .form-style{
@@ -42,4 +42,13 @@ footer{
 .h6-style{
   font-size: small;
   margin-left: 4rem;
+}
+
+.p-style{
+  text-align: justify;
+}
+
+
+.th-style{
+  text-align:center;
 }

@@ -1,0 +1,9 @@
+{
+    "adminInfo": [
+        {
+            "_id":1,
+            "email":"admin@email.com",
+            "password":"Abc!1234"
+        }
+    ]
+}

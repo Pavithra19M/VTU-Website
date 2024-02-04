@@ -3,7 +3,7 @@ import {Form, Button, Container, Row, Col} from 'react-bootstrap';
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'
 
-const ResultComponenet = () => {
+const ResultComponent = () => {
 
     const [registerInput, setRegisterInput] = useState('')
     const [error, setError] = useState('')
@@ -33,7 +33,7 @@ const ResultComponenet = () => {
     return(
         <>
           
-           <Link to='/home' className="btn btn-dark my-4">Go Back</Link>
+           <Link to='/' className="btn btn-dark my-4">Go Back</Link>
            <Container>
             <br/><br/>
                 <Row className="justify-content-center form-style">
@@ -63,4 +63,4 @@ const ResultComponenet = () => {
     )
 }
 
-export default ResultComponenet
+export default ResultComponent

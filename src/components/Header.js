@@ -8,8 +8,8 @@ const Header = () => {
         <header>
             <Navbar className='navbar-style' expand='lg'>
                 <Container>
-                    <LinkContainer to='/home'>
-                        <Navbar.Brand href='/home'>
+                    <LinkContainer to='/'>
+                        <Navbar.Brand href='/'>
                         <Image src='images/logo.jpg' roundedCircle  className='logo-style'/>
                         <h6 className='logo_name'>Visvesvaraya Technological University, Belagaum</h6>
                         </Navbar.Brand>
@@ -17,8 +17,8 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto nav-style">
-                            <LinkContainer to='/home'>
-                                <Nav.Link href="/home">Home</Nav.Link>
+                            <LinkContainer to='/'>
+                                <Nav.Link href="/">Home</Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to='/about'>
@@ -26,8 +26,9 @@ const Header = () => {
                             </LinkContainer>
                             
                             <NavDropdown title="Academic" id="basic-nav-dropdown">
-                              <LinkContainer to='/admission'>
-                                <NavDropdown.Item href="/admission">Admission</NavDropdown.Item>
+                              <LinkContainer to='/student/admissionform'>
+                                <NavDropdown.Item href="/student/admissionform">New Applicant
+                                </NavDropdown.Item>
                               </LinkContainer>
                               
                               <LinkContainer to='/circular & notification'>
@@ -37,9 +38,6 @@ const Header = () => {
                               <LinkContainer to='/certificates'>
                                 <NavDropdown.Item href="/certificates">Certificates Issued</NavDropdown.Item>
                               </LinkContainer>
-                                
-                                
-                                
                             </NavDropdown>
 
                             <NavDropdown title="Examination" id="basic-nav-dropdown">
@@ -67,6 +65,12 @@ const Header = () => {
 
                               <LinkContainer to='/electronics'>
                                 <NavDropdown.Item href="/electronics">Electronics & Communication Engineering</NavDropdown.Item>
+                              </LinkContainer>
+                            </NavDropdown>
+
+                            <NavDropdown title="Staff Login" id="basic-nav-dropdown">
+                              <LinkContainer to='/admin/login'>
+                                <NavDropdown.Item href='/admin/login'>Login as Admin</NavDropdown.Item>
                               </LinkContainer>
                             </NavDropdown>
                             </Nav>
